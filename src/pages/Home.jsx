@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './../styles/home.css'
-import { Person,Lock, Visibility, VisibilityOff } from '@mui/icons-material'
+import { Person,Lock, Visibility, VisibilityOff,LockOpen } from '@mui/icons-material'
 import { useNavigate } from 'react-router-dom'
 
 export default function Home() {
@@ -25,8 +25,10 @@ export default function Home() {
           <input type="text" placeholder='email'/>
         </div>
         <div className="field">
-          <Lock className='icon'/>
+          {hide?<Lock className='icon'/>:<LockOpen className='icon'/>}
+
           <input type={hide?"password":"text"} placeholder='password'/>
+
           {hide?<VisibilityOff className='icon2' onClick={()=>setHide(false)}/>:
           <Visibility className='icon2' onClick={()=>setHide(true)}/>}
         </div>
