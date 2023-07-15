@@ -1,0 +1,71 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.dashboard {
+    width: 100%;
+    min-height: 100vh;
+    background: url("./../assets/ing2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center;
+}
+.dashboard nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: var(--main-color);
+    min-height: 90px;
+    /*box-shadow: 0 5px 5px silver;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.dashboard nav .left {
+    font-size: 30px;
+    font-weight: 500;
+    /*font-family: 'Dancing Script', cursive;*/
+    font-family: 'Lobster', cursive;
+}
+
+.dashboard nav .center ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.dashboard nav .center ul li {
+    list-style: none;
+}
+
+.dashboard nav .center ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 19px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.dashboard nav .center ul li a.active {
+    color: white;
+}
+
+.dashboard nav .right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dashboard nav .right span{
+    font-size: 20px;
+}
+.dashboard nav .right .icon {
+    cursor: pointer;
+    margin: 0px 10px;
+    font-weight: 800;
+    font-size: 30px;
+}
