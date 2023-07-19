@@ -8,7 +8,7 @@ export default function Home() {
   const [hide,setHide] = useState(true)
 
   const login = ()=>{
-    navig('/controller')
+    navig('/controller/accueil')
   }
 
   return (

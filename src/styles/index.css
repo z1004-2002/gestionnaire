@@ -5,8 +5,18 @@
     transition: 0.3s
 }
 :root{
-    --main-color:#c180ff;
-    --second-color:#e9d1ff;
-    --btn-primary-color:#9422ff;
-    --icon-primary-color:#6100bd;
+    --main-color:hsla(271, 100%, 75%, 0.8);
+    --second-color:rgba(233, 209, 255, 0.8);
+    --tirth-color:rgba(205, 163, 245, 0.801);
+    --hover-color:rgb(132, 0, 255);
+    --btn-primary-color:rgb(148, 34, 255);
+    --icon-primary-color:rgb(97, 0, 189);
+    --icon-secondary-color:rgb(165, 69, 255);
+}
+
+.modal{
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
 }
